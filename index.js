@@ -8,5 +8,16 @@ function inputLength();{
 
 function createListElement() {
     var li = document.createElement("li");
-    li.appendChild(document)
+    li.appendChild(document.createTextNode(input.value));
+    ul.appendChild(li);
+
+    li.addEventListener("click", function () {
+        var finished = this.classList.toggle("done");
+        var removeButton = document.createElement("button");
+        removeButton.classList.add("deleteButton");
+
+        if(finished) {
+            add
+        }
+    }
 }
